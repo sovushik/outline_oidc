@@ -1,6 +1,6 @@
 services:
   outline:
-    image: outlinewiki/outline:latest
+    image: sovushik/outline-ru:latest
     restart: unless-stopped
     command: sh -c 'yarn sequelize db:migrate --env=production-ssl-disabled && yarn start'
     env_file: .env
